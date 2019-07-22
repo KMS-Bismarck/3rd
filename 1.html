@@ -8,5 +8,17 @@
 </head>
 <body>
   
+  <script>
+    function parent(momey){
+      var t=1000;
+      return function(momey){
+        t-=momey
+        document.write(`本次花费${momey}元，还剩${t}元<br>`)
+      }
+    }
+  var child=parent()
+  child(100);
+  child(200);
+  </script>
 </body>
 </html>
