@@ -5,14 +5,41 @@
 }
 body{
   text-align: center;
+  background: #00c3ff;
 }
-#container{
+#bg-long{
+  overflow: hidden;
   width: 100%;
-  height: 1000px;
-  background-image:url(./image/section_1_bg_1.jpg);
-  /* 滚动动画 */
-
+  height: 800px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
+#bg-long img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+}
+.c1{
+  animation-name: roll1;
+}
+.c2{
+  animation-name: roll2;
+}
+@keyframes roll1{
+  0%{left: 0px; top: 0px;}
+  100%{left: 100%; top: 0px;}
+}
+@keyframes roll2{
+  0%{left: -100%; top: 0px;}
+  100%{left: 0px; top: 0px;}
+}
+
 #logo{
   position: absolute;
   top: 200px;
@@ -56,46 +83,63 @@ body{
 }
 #top1{
 position: absolute;
-top: 160px;
-right: 70%;
+top: 182px;
+width: 355px;
+height: 618px;
+left: 10%;
 z-index: 1;
 }
 #top2{
   position:absolute;
   width: 100%;
   height:100%;
-  background: url("./image/nav_list_bg.png") no-repeat;
   z-index: 2;
-  top: 700px;
+  top: 650px;
 }
 #top3{
-  position:absolute;
-  width: 100%;
-  height: 2000px;
-  top: 1000px;
-  background-color: #00c3ff ;
-  z-index: 1;
-}
+  position: relative;
+  margin: 0 auto;
+  top: 800px;
+  left: -65px;
+  z-index: 3;
+  margin-top: 30px;
+} 
 .video1,.video2{
-  position: absolute;
-  margin-top: 100px;
-  float: left;
-  width:150px;
-  height: 180px;
+  width:200px;
+  height: 130px;
   border: 3px solid #fff;
   border-radius: 20px;
   background:rgba(0,0,0,.25);
   transform:skew(-10deg);
 }
-.video1{
-  left: 100px;
-}
 .video2{
-  right: 100px;
+  margin-left: 70px;
 }
 .v1,.v2{
   border-radius: 20px;
   width: 100%;
   height: 100%;
   object-fit:fill;
+}
+.upline{
+  position: absolute;
+  width: 850px;
+  left: 325px;
+  top: 750px;
+  z-index: 4;
+}
+#kiana1{
+  margin-left: 50px;
+  margin-right: 25px;
+  background-image: url(./image/kiana_c1.png);
+}
+.Valkyrie{
+  width: 120px;
+  height: 130px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  transform:skew(-10deg);
+  background: #00c3ff;
+  background-size: cover;
+  background-position-x: -10px;
 }
