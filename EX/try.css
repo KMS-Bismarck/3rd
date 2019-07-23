@@ -19,7 +19,7 @@ body{
   left: 0;
   right: 0;
   margin:0 auto;
-  width: 1000px;
+  width: 880px;
   height: 70px;
   z-index: 3;
 }
@@ -69,4 +69,20 @@ z-index: 1;
   top: 1000px;
   background-color: #00c3ff ;
   z-index: 1;
+}
+.video1,.video2{
+  position: absolute;
+  margin-top: 100px;
+  float: left;
+  width:150px;
+  height: 180px;
+  border-radius: 20px;
+  background:rgba(0,0,0,.25);
+  transform:skew(-10deg);
+}
+.video1{
+  left: 100px;
+}
+.video2{
+  right: 100px;
 }
