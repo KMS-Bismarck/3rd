@@ -128,11 +128,6 @@ z-index: 1;
   top: 750px;
   z-index: 4;
 }
-#kiana1{
-  margin-left: 50px;
-  margin-right: 25px;
-  background-image: url(./image/kiana_c1.png);
-}
 .Valkyrie{
   width: 120px;
   height: 130px;
@@ -142,4 +137,24 @@ z-index: 1;
   background: #00c3ff;
   background-size: cover;
   background-position-x: -10px;
+}
+#kiana1{
+  margin-left: 50px;
+  margin-right: 25px;
+  background-image: url(./image/kiana_c1.png);
+}
+#kiana2{
+  margin-left: 50px;
+  margin-right: 25px;
+  background-image: url(./image/kiana_c3.png);
+}
+#kiana3{
+  margin-left: 50px;
+  margin-right: 25px;
+  background-image: url(./image/kiana_c4.png)
+}
+#kiana4{
+  margin-left: 50px;
+  margin-right: 25px;
+  background-image: url(./image/kiana_pt.png);
 }
