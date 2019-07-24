@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.footer_text{
+  background: #000;
+  color: #666;
+  font-size: 12px;
+  font-family: Microsoft Yahei;
+}
+.footer_text a{
+  text-decoration: none;
+  color: #666;
+}
+.footer{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: url(../public/image/bg_02_02.jpg) no-repeat;
+  background-size:100% 100%;
+  background-position: center;
+  height: 655px;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1024px;
+}
