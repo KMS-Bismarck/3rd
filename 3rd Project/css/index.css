@@ -5,6 +5,7 @@
 body{
   position: relative;
 }
+
 .my_header{
   width: 100%;
 }
@@ -12,8 +13,56 @@ header{
   position: fixed;
   left: 25%;
   width: 100%;
+  z-index: 2;
+}
+footer{
+  position: absolute;
+  top: 700px;
+  width: 100%;
 }
 .my_footer{
 width: 100%;
-height: 930px;
+height: 240px;
+}
+/* 顶部背景动画样式设置 */
+#background_img{
+  overflow: hidden;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+#background_img img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+}
+.c1{
+  animation-name: roll1;
+}
+.c2{
+  animation-name: roll2;
+}
+@keyframes roll1{
+  0%{left: 0px; top: 0px;}
+  100%{left: 100%; top: 0px;}
+}
+@keyframes roll2{
+  0%{left: -100%; top: 0px;}
+  100%{left: 0px; top: 0px;}
+}
+/* 顶部琪亚娜图片 */
+#top_kiana{
+  width: 260px;
+  height: 520px;
+  position: absolute;
+  top:200px;
+  left: 15%;
 }
